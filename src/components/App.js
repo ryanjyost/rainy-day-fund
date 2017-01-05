@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import './App.css';
+//App.js
 
-class App extends Component {
-  render() {
+import React, { Component } from 'react';
+
+//components
+import Landing from './Landing'
+
+const App = () =>  {
     return (
 
-      <p> Hi </p>
+        <Landing/>
 
     );
   }
-}
 
 export default App;
