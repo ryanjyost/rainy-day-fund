@@ -7,10 +7,10 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 
 
-import App from './components/App';
+import Root from './router';
 
 
 ReactDOM.render(
-  <App />,
+  <Root />,
   document.getElementById('root')
 );
