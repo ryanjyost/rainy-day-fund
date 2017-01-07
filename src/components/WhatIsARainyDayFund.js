@@ -34,7 +34,7 @@ const WhatIsARainyDayFund = () =>  {
 				<br/><br/>
 		   </h3>
 
-	        <Button className="next-step-btn" href="/#/app/assumptions" block>
+	        <Button className="next-step-btn" href="/#/assumptions" block>
 	    		First Step: Assumptions
 	    	</Button>
         </div>

@@ -1,12 +1,16 @@
 //src/components/App.js
 
-import React, { Component } from 'react';
-import Landing from './Landing'
+import React from 'react';
+import { Grid, Row } from 'react-bootstrap';
 
-const App = () =>  {
+const App = ({children}) =>  {
     return (
 
-        <Landing/>
+        <Grid>
+	          <Row>
+	            {children}
+	          </Row>
+	    </Grid>
 
     );
   }
