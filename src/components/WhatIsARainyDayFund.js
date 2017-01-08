@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 const WhatIsARainyDayFund = () =>  {
 
     return (
-        <div>
+        <div id="WhatIsARainyDayFund">
 		   <h1>What is a Rainy Day Fund?</h1>
 
 		   <h3>
@@ -34,7 +34,7 @@ const WhatIsARainyDayFund = () =>  {
 				<br/><br/>
 		   </h3>
 
-	        <Button className="next-step-btn" href="/#/assumptions" block>
+	        <Button className="nav-btn" href="/#/assumptions" block>
 	    		First Step: Assumptions
 	    	</Button>
         </div>

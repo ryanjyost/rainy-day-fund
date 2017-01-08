@@ -6,6 +6,7 @@ import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 import App from './components/App'
 import Landing from './components/Landing'
 import WhatIsARainyDayFund from './components/WhatIsARainyDayFund'
+import Assumptions from './components/Assumptions'
 
 const Root = () => {
 	return(
@@ -13,6 +14,7 @@ const Root = () => {
 			<Route path="/" component={App}>
 				<IndexRoute component={Landing} />
 				<Route path="what-is-a-rainy-day-fund" component={WhatIsARainyDayFund} />
+				<Route path="assumptions" component={Assumptions} />
 			</Route>
 		</Router>
 	)

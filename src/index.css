@@ -10,13 +10,22 @@ General
   padding:2vh 5% 2vh 5%;
 }
 
+
+/* landing header */
 h1{
   color:#333333;
+  font-size: 3em;
   font-weight:800;
   margin-bottom:3vh;
   padding-bottom:2vh;
   border-bottom:1px solid #A9F5BC;
   text-align:center;
+}
+
+/* used for control labels */
+h4{
+  font-size: 1.5em;
+  padding: 0vh 0px 1vh 0px;
 }
 
 h6{
@@ -27,8 +36,46 @@ h6{
 }
 
 
+select{
+  text-align-last:center !important;
+}
+
+
+.control-label{
+  text-align: center;
+  display: block;
+}
+
+.input-cont{
+  display: block;
+  margin: auto;
+  width:20em;
+}
+
+  .dollar-sign{
+    font-size: 2em;
+    padding-right: 1em;
+  }
+
+  .dollar-input{
+    width: 8em;
+    font-size: 2em;
+    margin: auto;
+    display: inline-block;
+    height: 2em;
+  }
+
+  .dollar-input:focus{
+      -webkit-box-shadow: 0px 2px 31px -1px #A9F5BC;
+      -moz-box-shadow: 0px 2px 31px -1px #A9F5BC;
+      box-shadow: 0px 2px 31px -1px #A9F5BC;
+      border-radius:5px;
+      border:1px solid #ffffff;
+  }
+
 .nav-btn{
-  width:100%;
+  width:75%;
+  margin: auto;
   color:#333333;
   border-radius: 5px;
   font-weight:800;
@@ -40,10 +87,9 @@ h6{
 /*====================================
 Landing
 ====================================*/
-.Landing{
+#Landing{
   width:80%;
   max-width: 900px;
-
 }
 
 #landing-jumbotron{
@@ -52,3 +98,70 @@ Landing
   display:block;
   background-color:#f9f9f9;
 }
+
+/*====================================
+WhatIsARainyDayFund
+====================================*/
+
+#WhatIsARainyDayFund h3 {
+  width: 75%;
+  margin: auto;
+  padding: 1vh 0px 2vh 0px;
+}
+
+/*====================================
+Assumptions
+====================================*/
+
+#Assumptions{
+
+}
+
+#assumptions-form{
+  width: 60%;
+  margin: auto;
+  padding: 5vh 0px 5vh 0px;
+}
+
+  .assumption{
+    padding: 1vh 0px 5vh 0px;
+    border-bottom:1px solid #A9F5BC;
+  }
+
+    #select-income-src{
+      font-size: 2em;
+      height: 2em;
+    }
+
+    #select-income-src:focus{
+       -webkit-box-shadow: 0px 2px 31px -1px #A9F5BC;
+        -moz-box-shadow: 0px 2px 31px -1px #A9F5BC;
+        box-shadow: 0px 2px 31px -1px #A9F5BC;
+        border-radius:5px;
+        border:1px solid #ffffff;
+
+    }
+
+    #initialSavings{
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
