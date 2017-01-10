@@ -1,7 +1,7 @@
 //src/components/Assumptions.js
 
 import React from 'react';
-import { FormGroup, Row, ControlLabel, FormControl, Button } from 'react-bootstrap';
+import { FormGroup, Row, ControlLabel, FormControl, Button, InputGroup } from 'react-bootstrap';
 
 import {formatDollarValues} from '../helpers'
 
@@ -28,7 +28,7 @@ const Assumptions = () => {
 					</ControlLabel>
 
 					<div className="input-cont">
-						<span className="dollar-sign">$</span>
+						<InputGroup.Addon className="dollar-sign">$</InputGroup.Addon>
 						<FormControl //Income input
 				          	id="income"
 				          	className="dollar-input"
@@ -48,7 +48,7 @@ const Assumptions = () => {
 					</ControlLabel>
 
 					<div className="input-cont">
-					<span className="dollar-sign">$</span>
+					<InputGroup.Addon className="dollar-sign">$</InputGroup.Addon>
 						<FormControl //Savings input
 				          	id="initialSavings"
 				          	className="dollar-input"

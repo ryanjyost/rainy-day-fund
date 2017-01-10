@@ -7,6 +7,7 @@ import App from './components/App'
 import Landing from './components/Landing'
 import WhatIsARainyDayFund from './components/WhatIsARainyDayFund'
 import Assumptions from './components/Assumptions'
+import Expenses from './components/Expenses'
 
 const Root = () => {
 	return(
@@ -15,6 +16,7 @@ const Root = () => {
 				<IndexRoute component={Landing} />
 				<Route path="what-is-a-rainy-day-fund" component={WhatIsARainyDayFund} />
 				<Route path="assumptions" component={Assumptions} />
+				<Route path="expenses" component={Expenses} />
 			</Route>
 		</Router>
 	)

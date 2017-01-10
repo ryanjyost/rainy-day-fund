@@ -13,6 +13,6 @@ const Landing = () =>  {
           </Jumbotron>
         </Grid>
     );
-  }
+}
 
 export default Landing;

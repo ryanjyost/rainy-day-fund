@@ -22,6 +22,13 @@ h1{
   text-align:center;
 }
 
+
+h3{
+  font-size: 2em;
+  display: inline-block;
+}
+
+
 /* used for control labels */
 h4{
   font-size: 1.5em;
@@ -40,6 +47,18 @@ select{
   text-align-last:center !important;
 }
 
+  @media(max-width:700px){
+    select{
+      font-size: 1em !important;
+      height: 3em !important;
+    }
+  }
+
+ul {
+  list-style-type: none !important;
+}
+
+
 
 .control-label{
   text-align: center;
@@ -49,16 +68,17 @@ select{
 .input-cont{
   display: block;
   margin: auto;
-  width:20em;
+  width:13em;
 }
 
+  /* diff styles below for difference views */
   .dollar-sign{
-    font-size: 2em;
-    padding-right: 1em;
+    display: inline-block;
+    color: #585858;
   }
 
   .dollar-input{
-    width: 8em;
+    width: 5em;
     font-size: 2em;
     margin: auto;
     display: inline-block;
@@ -74,13 +94,14 @@ select{
   }
 
 .nav-btn{
-  width:75%;
+  min-width:50%;
+  max-width: 800px;
   margin: auto;
   color:#333333;
   border-radius: 5px;
   font-weight:800;
   text-decoration: none;
-  font-size:2em;
+
   padding: 5px 15px 5px 15px;
 }
 
@@ -89,7 +110,7 @@ Landing
 ====================================*/
 #Landing{
   width:80%;
-  max-width: 900px;
+
 }
 
 #landing-jumbotron{
@@ -100,6 +121,22 @@ Landing
 }
 
 /*====================================
+Menu
+====================================*/
+
+@media(max-width:700px){
+  #menu{
+    bottom: 0 !important;
+  }
+
+  .menu-btn{
+    display: block !important;
+    width: 100% !important;
+  }
+
+}
+
+/*====================================
 WhatIsARainyDayFund
 ====================================*/
 
@@ -107,6 +144,7 @@ WhatIsARainyDayFund
   width: 75%;
   margin: auto;
   padding: 1vh 0px 2vh 0px;
+  display: block !important;
 }
 
 /*====================================
@@ -117,16 +155,32 @@ Assumptions
 
 }
 
+
 #assumptions-form{
   width: 60%;
   margin: auto;
   padding: 5vh 0px 5vh 0px;
 }
 
+  @media(max-width:700px){
+    #assumptions-form{
+      padding-top: 1vh !important;
+    }
+  }
+
   .assumption{
     padding: 1vh 0px 5vh 0px;
     border-bottom:1px solid #A9F5BC;
   }
+
+    .assumption .dollar-sign{
+      color: #585858;
+      height: 2em;
+      font-size: 2em;
+      vertical-align: top;
+      line-height: 1em;
+      padding: 0.5em 0.75em 0.5em 0.25em;
+    }
 
     #select-income-src{
       font-size: 2em;
@@ -142,9 +196,151 @@ Assumptions
 
     }
 
-    #initialSavings{
+
+/*====================================
+Expenses
+====================================*/
+
+#Expenses input:focus{
+  -webkit-box-shadow: 0px 2px 31px -4px #A9F5BC;
+    -moz-box-shadow: 0px 2px 31px -4px #A9F5BC;
+    box-shadow: 0px 2px 31px -4px #A9F5BC;
+    border-radius:5px;
+    border:1px solid #ffffff;
+}
+
+
+#expense-header{
+  text-align: center;
+  padding: 2vh 0px 2vh 0px;
+}
+
+  #add-expense-btn{
+    margin: auto;
+    display: block;
+    max-width: 500px;
+
+
+    background-image: linear-gradient(to bottom, #f9f9f9 -60%, #A9F5BC 100%);
+  }
+
+  #add-expense-btn:hover{
+    background-color: #A9F5BC;
+  }
+
+   #add-expense-btn:focus{
+    background-color: #A9F5BC;
+  }
+
+/*Expense*/
+
+#expense-list{
+  margin: 5vh 0px 0px 0px;
+}
+
+@media(max-width:736px){
+  #expense-list{
+    margin-top: 2vh !important;
+    width: 100% !important;
+    padding-left: 0px !important;
+  }
+}
+
+.expense-item{
+  width: 65%;
+  margin: auto;
+  padding: 1vh 0px 1vh 1px;
+
+
+}
+
+    .expense-name{
+      display: inline-block;
+      width: 65%;
+      font-size: 1.25em;
+      height: 2em;
+    }
+
+    .expense-amt-group{
+      display: inline-block;
+      height: 2em;
+      font-size: 1.25em !important;
+      float: right;
+    }
+
+        .expense-amt-group .dollar-sign{
+          width: 1.5em ;
+          font-size: 1.25em ;
+
+        }
+
+        .expense-amt{
+          display: inline-block !important;
+          width: 4.5em !important;
+          float: right !important;
+          font-size: 1.25em !important;
+        }
+
+    @media(max-width:700px) {
+
+      .expense-item{
+        width: 80%;
+      }
+
+
+      .expense-name{
+        width:100%;
+        margin-bottom: 0vh;
+        display: inline-flex !important;
+      }
+
+      .expense-amt-group{
+        width: 100%;
+        float: none !important;
+      }
+
+       .expense-amt-group .dollar-sign{
+          display: inline-flex !important;
+          width: 14%;
+        }
+
+
+      .expense-amt{
+        display: inline-block !important;
+        width: 86% !important;
+      }
+
 
     }
+
+#TotalExpenses{
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  border-top:1px solid #A9F5BC;
+  margin-top: 6vh;
+}
+
+
+    #expenses-total{
+      float: right;
+    }
+
+    @media(max-width:700px){
+      #TotalExpenses h3{
+        text-align: center !important;
+        display: block !important;
+      }
+
+      #expenses-total{
+        display: block !important;
+        float: none;
+        margin: 1vh 0px 0px 0px !important;
+        text-align: center;
+      }
+    }
+
 
 
 
