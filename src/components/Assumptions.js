@@ -29,7 +29,7 @@ const Assumptions = () => {
 
 					<div className="input-cont">
 						<InputGroup.Addon className="dollar-sign">$</InputGroup.Addon>
-						<FormControl //Income input
+						<FormControl
 				          	id="income"
 				          	className="dollar-input"
 				          	defaultValue={formatDollarValues(1000)}
@@ -44,12 +44,12 @@ const Assumptions = () => {
 
 			    <Row className="assumption">
 					<ControlLabel className="control-label" >
-						<h4>How much do you have in savings?</h4>
+						<h4>How much do you have in savings that you <u>do not plan to spend</u> any time soon?</h4>
 					</ControlLabel>
 
 					<div className="input-cont">
 					<InputGroup.Addon className="dollar-sign">$</InputGroup.Addon>
-						<FormControl //Savings input
+						<FormControl
 				          	id="initialSavings"
 				          	className="dollar-input"
 				          	defaultValue={formatDollarValues(1000)}
@@ -64,7 +64,7 @@ const Assumptions = () => {
 			</FormGroup>
 
 			<Button className="nav-btn" href="/#/expenses" block>
-				Next Step: Add up your monthly expenses
+				Next Step: Expenses
 			</Button>
 		</div>
 	)

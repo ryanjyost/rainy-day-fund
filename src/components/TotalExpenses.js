@@ -5,7 +5,7 @@ import {formatDollarValues} from '../helpers'
 
 
 
-const TotalExpenses = ({totalExpenses}) =>  {
+const TotalExpenses = () =>  {
     return (
         <div id="TotalExpenses">
             <h3>Total Monthly Expenses</h3>

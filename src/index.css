@@ -35,6 +35,14 @@ h4{
   padding: 0vh 0px 1vh 0px;
 }
 
+h5{
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  line-height: 1.5em;
+
+}
+
 h6{
 	font-size: 1.5em;
 	font-weight: 300;
@@ -101,7 +109,7 @@ ul {
   border-radius: 5px;
   font-weight:800;
   text-decoration: none;
-
+  font-size: 2em;
   padding: 5px 15px 5px 15px;
 }
 
@@ -145,6 +153,7 @@ WhatIsARainyDayFund
   margin: auto;
   padding: 1vh 0px 2vh 0px;
   display: block !important;
+  line-height: 1.5em;
 }
 
 /*====================================
@@ -341,6 +350,49 @@ Expenses
       }
     }
 
+/*====================================
+Savings Plan
+====================================*/
+
+#SavingsPlan{
+  width: 75%;
+  margin: auto;
+}
+
+#SavingsPlan .input-cont{
+  display: inline-block;
+  margin: auto;
+  padding: 0px 0em 0px 1em;
+  width: 13em;
+}
+
+#SavingsPlan h3{
+  line-height: 1.25em;
+  margin-top: 2vh ;
+  margin-bottom: 2vh;
+
+}
+
+#SavingsPlan .dollar-sign{
+    color: #585858;
+      height: 2em;
+      font-size: 2em;
+      vertical-align: top;
+      line-height: 1em;
+      padding: 0.5em 0.75em 0.5em 0.25em;
+}
+
+#monthlySavings{
+  width: 4.5em;
+}
+
+#percent-income-cont{
+  width: 10em !important;
+}
+
+#percent-of-income{
+  width: 3em;
+}
 
 
 

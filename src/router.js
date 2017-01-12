@@ -8,6 +8,7 @@ import Landing from './components/Landing'
 import WhatIsARainyDayFund from './components/WhatIsARainyDayFund'
 import Assumptions from './components/Assumptions'
 import Expenses from './components/Expenses'
+import SavingsPlan from './components/SavingsPlan'
 
 const Root = () => {
 	return(
@@ -17,6 +18,7 @@ const Root = () => {
 				<Route path="what-is-a-rainy-day-fund" component={WhatIsARainyDayFund} />
 				<Route path="assumptions" component={Assumptions} />
 				<Route path="expenses" component={Expenses} />
+				<Route path="savings-plan" component={SavingsPlan} />
 			</Route>
 		</Router>
 	)

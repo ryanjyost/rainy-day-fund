@@ -9,7 +9,7 @@ const WhatIsARainyDayFund = () =>  {
 
 		   <h3>
 				A rainy day fund, a.k.a. an <a href="http://www.investopedia.com/terms/e/emergency_fund.asp" target="_blank">
-				emergency fund</a> is a savings account established for one purpose - to weather a financial disaster, e.g. the
+				emergency fund</a>, is a savings account established for one purpose - to weather a financial disaster, e.g. the
 				loss of your job, unexpected medical expenses, a much-needed car repair, etc.
 		   </h3>
 
@@ -28,7 +28,7 @@ const WhatIsARainyDayFund = () =>  {
 		   <h3>
 				This app has 3 steps.<br/><br/>
 				1. Assumptions - Just basic info to get things started.<br/><br/>
-				2. Expenses - Listing out your monthly expenses to determine the proper size of your emergency fund and get a
+				2. Expenses - List out your monthly expenses to determine the proper size of your emergency fund and get a
 				   clear picture of your financial obligations.  <br/><br/>
 				3. Savings Plan - See how long it would take to fund your emergency fund, and experiment with how much you want to save each month to reach your goal.
 				<br/><br/>
