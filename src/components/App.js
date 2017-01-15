@@ -9,7 +9,7 @@ const App = ({children}) =>  {
     return (
 
         <Grid id="App">
-	          {child === "Landing" ? null :  <Row id="MenuBar"><MenuBar/></Row> }
+	          {child !== "Landing" && <Row id="MenuBar"><MenuBar/></Row> }
 	          <Row>{children}</Row>
 	    </Grid>
 
