@@ -1,15 +1,27 @@
 //src/reducers/reducers.js
 
-import {UPDATE_INCOME} from '../actions'
+import * as types from '../actions';
+
+//=================================
+// Assumptions Reducer
+//=================================
 
 const initialAssumptionsState = {
-   income: 0,
-}
+	  incomeSources: 1,
+	  income: 0,
+	  initialSavings: 0
+};
 
 const assumptionsReducer = function(state=initialAssumptionsState, action){
 	switch(action.type){
-		case UPDATE_INCOME:
+		case types.UPDATE_INCOME_SOURCES:
+			return Object.assign({}, state, {incomeSources: action.sources})
+
+		case types.UPDATE_INCOME:
 			return Object.assign({}, state, {income: action.income})
+
+		case types.UPDATE_SAVINGS:
+			return Object.assign({}, state, {initialSavings: action.savings})
 
 		default: return state;
 	}
