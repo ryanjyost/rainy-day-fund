@@ -2,10 +2,11 @@
 
 import { combineReducers } from 'redux';
 
-import { assumptionsReducer } from './reducers';
+import { assumptionsReducer, expensesReducer } from './reducers';
 
 const appReducer = combineReducers({
     assumptions: assumptionsReducer,
+    expenses: expensesReducer,
 });
 
 

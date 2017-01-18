@@ -2,19 +2,15 @@
 
 import React from 'react';
 import {formatDollarValues} from '../helpers'
+import {calcTotalExpenses} from '../helpers'
 
-
-
-const TotalExpenses = () =>  {
+const TotalExpenses = ({expenses}) =>  {
     return (
         <div id="TotalExpenses">
             <h3>Total Monthly Expenses</h3>
-            {' '}
-
-            {/* Expense Total */}
 
             <h3 id="expenses-total">
-               ${'   '}{formatDollarValues(300)}
+               ${'   '}{formatDollarValues(calcTotalExpenses(expenses))}
             </h3>
         </div>
     )

@@ -20,3 +20,38 @@ export const updateIncome = (income) => {
 export const updateSavings = (savings) => {
 	return {type: UPDATE_SAVINGS, savings}
 }
+
+//=============================================
+// Expenses
+//=============================================
+
+export const ADD_EXPENSE = 'ADD_EXPENSE';
+export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
+export const UPDATE_EXPENSE_NAME = 'UPDATE_EXPENSE_NAME';
+export const UPDATE_EXPENSE_AMOUNT = 'UPDATE_EXPENSE_AMOUNT';
+
+//action creators
+export const addExpense = (id) => {
+	return {type: ADD_EXPENSE, id}
+}
+
+export const removeExpense = (id) => {
+	return {type: REMOVE_EXPENSE, id}
+}
+
+export const updateExpenseName = (id, newName) => {
+	return {type: UPDATE_EXPENSE_NAME, payload:{id, newName}}
+}
+
+export const updateExpenseAmount = (id, newAmount) => {
+	return {type: UPDATE_EXPENSE_AMOUNT, payload:{id, newAmount}}
+}
+
+
+
+
+
+
+
+
+

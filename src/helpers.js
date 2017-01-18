@@ -17,7 +17,7 @@ export const formatDollarValues = (numString) => {
 
 //take array of expense objects and caluclate total amount
 export const calcTotalExpenses = (expenses) => {
-	const totalExpenses = expenses.reduce((total, expense, curr)=> {
+	const totalExpenses = expenses.reduce((total, expense)=> {
 		return total + expense.amount
 	}, 0)
 

@@ -5,14 +5,18 @@ import {FormControl, InputGroup } from 'react-bootstrap';
 import {formatDollarValues} from '../helpers'
 
 
-const Expense = () =>  {
+const Expense = ({key, name, amount, id, updateExpenseName, updateExpenseAmount, removeExpense}) =>  {
     return (
         <li className="expense-item">
 
             <FormControl
                 className="expense-name"
                 type="text"
+                defaultValue={name}
                 placeholder="Expense item"
+                onBlur={(e)=>
+                    updateExpenseName(id, e.target.value)
+                }
             />
 
             <InputGroup className="expense-amt-group">
@@ -21,11 +25,21 @@ const Expense = () =>  {
                 <FormControl
                     className="expense-amt"
                     type="text"
-                    defaultValue={formatDollarValues(100)}
+                    defaultValue={formatDollarValues(amount)}
                     onChange={(e)=>
                         e.target.value = formatDollarValues((e.target.value).replace(",",""))
                     }
+                    onBlur={(e) =>
+                        updateExpenseAmount(id, Number((e.target.value).replace(",","")))
+                    }
                 />
+
+                <span
+                    className="remove-expense"
+                    onClick={(e)=> removeExpense(id)}
+                >
+
+                x</span>
             </InputGroup>
 
         </li>

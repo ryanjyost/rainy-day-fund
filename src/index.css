@@ -160,11 +160,6 @@ WhatIsARainyDayFund
 Assumptions
 ====================================*/
 
-#Assumptions{
-
-}
-
-
 #assumptions-form{
   width: 60%;
   margin: auto;
@@ -247,31 +242,32 @@ Expenses
   margin: 5vh 0px 0px 0px;
 }
 
-@media(max-width:736px){
+@media(min-width:1000px){
   #expense-list{
+    width: 70%;
+    margin: auto !important;
     margin-top: 2vh !important;
-    width: 100% !important;
-    padding-left: 0px !important;
   }
 }
 
+
+
 .expense-item{
-  width: 65%;
+  width: 80%;
   margin: auto;
   padding: 1vh 0px 1vh 1px;
-
-
 }
 
     .expense-name{
       display: inline-block;
-      width: 65%;
+      width: 55%;
       font-size: 1.25em;
       height: 2em;
+      padding-right: 2%;
     }
 
     .expense-amt-group{
-      display: inline-block;
+      display: inline-flex;
       height: 2em;
       font-size: 1.25em !important;
       float: right;
@@ -279,47 +275,53 @@ Expenses
 
         .expense-amt-group .dollar-sign{
           width: 1.5em ;
-          font-size: 1.25em ;
+          font-size: 1.25em;
+          float: left;
+          height: 1.55em;
 
         }
 
         .expense-amt{
           display: inline-block !important;
           width: 4.5em !important;
-          float: right !important;
           font-size: 1.25em !important;
         }
 
+    .remove-expense{
+      line-height: 1.8em;
+      color: #bdbdbd;
+      display: inline-block;
+      font-size: 1em;
+      padding-left: 5%;
+      cursor: pointer;
+    }
+
     @media(max-width:700px) {
+        .expense-item{
+          width: 80%;
+        }
 
-      .expense-item{
-        width: 80%;
-      }
+        .expense-name{
+          width:100%;
+          margin-bottom: 0vh;
+          display: inline-flex !important;
+        }
 
+        .expense-amt-group{
+          width: 100%;
+          float: none !important;
+          padding-left: 0px !important;
+        }
 
-      .expense-name{
-        width:100%;
-        margin-bottom: 0vh;
-        display: inline-flex !important;
-      }
-
-      .expense-amt-group{
-        width: 100%;
-        float: none !important;
-      }
-
-       .expense-amt-group .dollar-sign{
+        .expense-amt-group .dollar-sign{
           display: inline-flex !important;
           width: 14%;
         }
 
-
-      .expense-amt{
-        display: inline-block !important;
-        width: 86% !important;
-      }
-
-
+        .expense-amt{
+          display: inline-block !important;
+          width: 86% !important;
+        }
     }
 
 #TotalExpenses{
