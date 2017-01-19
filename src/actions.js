@@ -30,7 +30,6 @@ export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
 export const UPDATE_EXPENSE_NAME = 'UPDATE_EXPENSE_NAME';
 export const UPDATE_EXPENSE_AMOUNT = 'UPDATE_EXPENSE_AMOUNT';
 
-//action creators
 export const addExpense = (id) => {
 	return {type: ADD_EXPENSE, id}
 }
@@ -48,10 +47,14 @@ export const updateExpenseAmount = (id, newAmount) => {
 }
 
 
+//=============================================
+// SavingsPlan
+//=============================================
 
+export const UPDATE_MONTHLY_SAVINGS = 'UPDATE_MONTHLY_SAVINGS'
 
-
-
-
+export const updateMonthlySavings = (newAmount) => {
+	return {type: UPDATE_MONTHLY_SAVINGS, newAmount}
+}
 
 

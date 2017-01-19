@@ -8,7 +8,7 @@ import Landing from './components/Landing'
 import WhatIsARainyDayFund from './components/WhatIsARainyDayFund'
 import AssumptionsContainer from './components/AssumptionsContainer'
 import ExpensesContainer from './components/ExpensesContainer'
-import SavingsPlan from './components/SavingsPlan'
+import SavingsPlanContainer from './components/SavingsPlanContainer'
 
 export default(
 	<Router history={hashHistory}>
@@ -17,7 +17,7 @@ export default(
 			<Route path="what-is-a-rainy-day-fund" component={WhatIsARainyDayFund} />
 			<Route path="assumptions" component={AssumptionsContainer} />
 			<Route path="expenses" component={ExpensesContainer} />
-			<Route path="savings-plan" component={SavingsPlan} />
+			<Route path="savings-plan" component={SavingsPlanContainer} />
 		</Route>
 	</Router>
 );

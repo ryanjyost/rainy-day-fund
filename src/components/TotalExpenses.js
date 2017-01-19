@@ -1,8 +1,7 @@
 //src/components/TotalExpenses.js
 
 import React from 'react';
-import {formatDollarValues} from '../helpers'
-import {calcTotalExpenses} from '../helpers'
+import {formatDollarValues, calcTotalExpenses} from '../helpers'
 
 const TotalExpenses = ({expenses}) =>  {
     return (

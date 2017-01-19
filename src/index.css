@@ -26,6 +26,7 @@ h1{
 h3{
   font-size: 2em;
   display: inline-block;
+  color: #333333;
 }
 
 
@@ -359,6 +360,12 @@ Savings Plan
 #SavingsPlan{
   width: 75%;
   margin: auto;
+}
+
+.warning-text{
+  color: #FE2E2E;
+  text-align: center;
+  display: block;
 }
 
 #SavingsPlan .input-cont{

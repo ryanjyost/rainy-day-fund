@@ -98,4 +98,25 @@ const expensesReducer = function(state = initialExpensesState, action){
 	}
 }
 
-export {assumptionsReducer, expensesReducer};
+//=================================
+// SavingsPlan Reducer
+//=================================
+
+const initialSavingsPlanState = {
+	monthlySavings: 50
+}
+
+
+const savingsPlanReducer = function(state=initialSavingsPlanState, action){
+	switch(action.type){
+
+		case types.UPDATE_MONTHLY_SAVINGS:
+			return Object.assign({}, state, {monthlySavings: action.newAmount})
+
+		default: return state;
+
+	}
+}
+
+
+export {assumptionsReducer, expensesReducer, savingsPlanReducer};
