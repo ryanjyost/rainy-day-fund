@@ -14,7 +14,7 @@ const Expense = ({key, name, amount, id, updateExpenseName, updateExpenseAmount,
                 type="text"
                 defaultValue={name}
                 placeholder="Expense item"
-                onBlur={(e)=>
+                onChange={(e)=>
                     updateExpenseName(id, e.target.value)
                 }
             />
@@ -26,12 +26,10 @@ const Expense = ({key, name, amount, id, updateExpenseName, updateExpenseAmount,
                     className="expense-amt"
                     type="text"
                     defaultValue={formatDollarValues(amount)}
-                    onChange={(e)=>
+                    onChange={(e)=> {
                         e.target.value = formatDollarValues((e.target.value).replace(",",""))
-                    }
-                    onBlur={(e) =>
                         updateExpenseAmount(id, Number((e.target.value).replace(",","")))
-                    }
+                    }}
                 />
 
                 <span
