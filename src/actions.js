@@ -2,8 +2,8 @@
 
 //=============================================
 // Assumptions
-//=============================================
 
+//action types
 export const UPDATE_INCOME_SOURCES = 'UPDATE_INCOME_SOURCES';
 export const UPDATE_INCOME = 'UPDATE_INCOME';
 export const UPDATE_SAVINGS = 'UPDATE_SAVINGS';
@@ -23,7 +23,6 @@ export const updateSavings = (savings) => {
 
 //=============================================
 // Expenses
-//=============================================
 
 export const ADD_EXPENSE = 'ADD_EXPENSE';
 export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
@@ -49,7 +48,6 @@ export const updateExpenseAmount = (id, newAmount) => {
 
 //=============================================
 // SavingsPlan
-//=============================================
 
 export const UPDATE_MONTHLY_SAVINGS = 'UPDATE_MONTHLY_SAVINGS'
 

@@ -8,8 +8,8 @@ import * as types from '../actions';
 
 const initialAssumptionsState = {
 	  incomeSources: 1,
-	  income: 3000,
-	  initialSavings: 2000
+	  income: 0,
+	  initialSavings: 0
 };
 
 const assumptionsReducer = function(state=initialAssumptionsState, action){
@@ -17,14 +17,14 @@ const assumptionsReducer = function(state=initialAssumptionsState, action){
 		case types.UPDATE_INCOME_SOURCES:
 			return Object.assign({}, state, {incomeSources: action.sources})
 
-		case types.UPDATE_INCOME:
+    case types.UPDATE_INCOME:
 			return Object.assign({}, state, {income: action.income})
 
-		case types.UPDATE_SAVINGS:
+    case types.UPDATE_SAVINGS:
 			return Object.assign({}, state, {initialSavings: action.savings})
 
-		default: return state;
-	}
+    default: return state;
+  }
 }
 
 //=================================
@@ -35,19 +35,19 @@ const initialExpensesState = [
 	{
 		id: 'exp_1',
 		name: 'Rent',
-		amount: 1000
+		amount: 0
 	},
 
 	{
 		id: 'exp_2',
 		name: 'Food',
-		amount: 300
+		amount: 0
 	},
 
 	{
 		id: 'exp_3',
 		name: 'Electric Bill',
-		amount: 200
+		amount: 0
 	}
 ]
 
@@ -94,7 +94,6 @@ const expensesReducer = function(state = initialExpensesState, action){
 			})
 
 		default: return state;
-
 	}
 }
 
@@ -106,15 +105,12 @@ const initialSavingsPlanState = {
 	monthlySavings: 50
 }
 
-
 const savingsPlanReducer = function(state=initialSavingsPlanState, action){
 	switch(action.type){
-
 		case types.UPDATE_MONTHLY_SAVINGS:
 			return Object.assign({}, state, {monthlySavings: action.newAmount})
 
 		default: return state;
-
 	}
 }
 

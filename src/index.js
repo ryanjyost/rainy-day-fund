@@ -11,10 +11,16 @@ import './index.css'
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import appReducer from './reducers';
+import {loadState, saveState} from './localStorage'
 
 require('es6-promise').polyfill();
 
-let store = createStore(appReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const persistedState = loadState();
+const store = createStore(appReducer, persistedState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+store.subscribe(() => {
+	saveState(store.getState());
+})
 
 ReactDOM.render(
   <Provider store={store}>{router}</Provider>,
