@@ -8,8 +8,8 @@ import * as types from '../actions';
 
 const initialAssumptionsState = {
 	  incomeSources: 1,
-	  income: 0,
-	  initialSavings: 0
+	  income: 3000,
+	  initialSavings: 2000
 };
 
 const assumptionsReducer = function(state=initialAssumptionsState, action){
@@ -35,19 +35,19 @@ const initialExpensesState = [
 	{
 		id: 'exp_1',
 		name: 'Rent',
-		amount: 0
+		amount: 1000
 	},
 
 	{
 		id: 'exp_2',
 		name: 'Food',
-		amount: 0
+		amount: 300
 	},
 
 	{
 		id: 'exp_3',
 		name: 'Electric Bill',
-		amount: 0
+		amount: 200
 	}
 ]
 

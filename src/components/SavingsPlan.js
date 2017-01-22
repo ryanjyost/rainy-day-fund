@@ -21,7 +21,8 @@ const SavingsPlan = ({assumptions, expenses, monthlySavings, handleUpdateMonthly
         // }
         // else{
 
-            const   rawInitialSavings = Number(assumptions.initialSavings),
+            const   rawIncome = assumptions.income,
+                    rawInitialSavings = assumptions.initialSavings,
                     rawMonthlyExpenses = calcTotalExpenses(expenses),
                     incomeSources = Number(assumptions.incomeSources),
                     initialSavings = formatDollarValues(assumptions.initialSavings),
@@ -29,6 +30,7 @@ const SavingsPlan = ({assumptions, expenses, monthlySavings, handleUpdateMonthly
                     monthlyExpenses = formatDollarValues(rawMonthlyExpenses),
                     rawSavingsGoal = monthsOfExpenses*rawMonthlyExpenses,
                     savingsGoal = formatDollarValues(monthsOfExpenses*rawMonthlyExpenses),
+                    rawSavingsDeficit = rawSavingsGoal - rawInitialSavings,
                     savingsDeficit = formatDollarValues(rawSavingsGoal - rawInitialSavings);
 
             return (
@@ -47,33 +49,38 @@ const SavingsPlan = ({assumptions, expenses, monthlySavings, handleUpdateMonthly
                             <InputGroup.Addon className="dollar-sign">$</InputGroup.Addon>
                             <FormControl
                                 id="monthlySavings"
-                                className="dollar-input"
-                                defaultValue={formatDollarValues(50)}
+                                className={monthlySavings > rawIncome ? "input-warning dollar-input" : "dollar-input"}
+                                defaultValue={formatDollarValues(monthlySavings)}
                                 type="text"
                                 maxLength="7"
-                                onChange={(e)=>
+                                onChange={(e)=> {
+                                    handleUpdateMonthlySavings(e.target.value)
                                     e.target.value = formatDollarValues((e.target.value).replace(",",""))
-                                }
+                                    let rawSavings = Number((e.target.value).replace(",", ""))
+                                    document.getElementById("percent-of-income").value = ((rawSavings/rawIncome)*100).toFixed(2)
+                                }}
                             />
                     </div>
                     <h3> a.k.a. </h3>
                     <div className="input-cont" id="percent-income-cont">
                             <FormControl
                                 id="percent-of-income"
-                                className="dollar-input"
-                                defaultValue={5}
-                                type="text"
-                                maxLength="3"
-                                onChange={(e)=>
-                                    e.target.value = formatDollarValues((e.target.value).replace(",",""))
-                                }
+                                className={monthlySavings > rawIncome ? "input-warning dollar-input" : "dollar-input"}
+                                defaultValue={((monthlySavings/rawIncome)*100).toFixed(2)}
+                                type="number"
+                                maxLength="4"
+                                min="0"
+                                max="100"
+                                step=".5"
+                                onChange={(e)=> {
+                                    let newAmount = ((e.target.value)/100)*rawIncome
+                                    handleUpdateMonthlySavings(newAmount)
+                                    document.getElementById("monthlySavings").value = formatDollarValues(newAmount)
+                                }}
                             />
                             <InputGroup.Addon className="dollar-sign">%</InputGroup.Addon>
                     </div>
-                    <h3> of your income </h3>
-                    <h3> every month, you'll have a fully-funded emergency fund in {' '}</h3>
-
-                    <h3><strong> {Math.ceil(800/50)} {' '} months.</strong></h3>
+                    <h3> of your income every month, you'll have a fully-funded emergency fund in&nbsp;<strong>{Math.ceil(rawSavingsDeficit/monthlySavings)}{' '} months.</strong></h3>
 
 
 

@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		handleUpdateMonthlySavings: (amount) => {
-			dispatch(updateMonthlySavings(Number((amount).replace(",", ""))));
+			dispatch(updateMonthlySavings(Number((amount).toString().replace(",", ""))));
 		}
 	}
 }
