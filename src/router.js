@@ -12,7 +12,7 @@ import SavingsPlanContainer from './components/SavingsPlanContainer'
 
 export default(
 	<Router history={hashHistory}>
-		<Route path="/" component={App}>
+		<Route path="/rainy-day-fund" component={App}>
 			<IndexRoute component={Landing} />
 			<Route path="what-is-a-rainy-day-fund" component={WhatIsARainyDayFund} />
 			<Route path="assumptions" component={AssumptionsContainer} />

@@ -34,7 +34,7 @@ const WhatIsARainyDayFund = () =>  {
 				<br/><br/>
 		   </h3>
 
-	        <Button className="nav-btn" href="/#/assumptions" block>
+	        <Button className="nav-btn" href="/#/rainy-day-fund/assumptions" block>
 	    		First Step: Assumptions
 	    	</Button>
         </div>

@@ -77,7 +77,7 @@ const Assumptions = ({assumptions, handleUpdateIncomeSources, handleUpdateIncome
 			    </Row>
 			</FormGroup>
 
-			<Button className="nav-btn" href="/#/expenses" block>
+			<Button className="nav-btn" href="/#/rainy-day-fund/expenses" block>
 				Next Step: Expenses
 			</Button>
 		</div>
