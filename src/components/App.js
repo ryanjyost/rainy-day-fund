@@ -5,11 +5,10 @@ import { Grid, Row } from 'react-bootstrap';
 import MenuBar from './MenuBar';
 
 const App = ({children}) =>  {
-    const child = children.props.route.component.name;
     return (
 
         <Grid id="App">
-	          {child !== "Landing" && <Row id="MenuBar"><MenuBar/></Row> }
+	          {document.getElementById('Landing') === null && <Row id="MenuBar"><MenuBar/></Row> }
 	          <Row>{children}</Row>
 	    </Grid>
 
