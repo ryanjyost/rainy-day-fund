@@ -36,7 +36,7 @@ const Expenses = ({expenses, handleAddExpense, handleRemoveExpense, handleUpdate
 
                 <TotalExpenses expenses={expenses} /><br/>
 
-                <Button className="nav-btn" href="/#/rainy-day-fund/savings-plan" block>
+                <Button className="nav-btn" href="/rainy-day-fund/#/savings-plan" block>
                 	Next Step: Savings Plan
                 </Button>
             </div>

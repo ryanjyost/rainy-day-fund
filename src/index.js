@@ -15,6 +15,7 @@ import {loadState, saveState} from './localStorage'
 
 require('es6-promise').polyfill();
 
+
 const persistedState = loadState();
 const store = createStore(appReducer, persistedState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
