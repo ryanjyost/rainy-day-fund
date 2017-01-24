@@ -6,12 +6,10 @@ import MenuBar from './MenuBar';
 
 const App = ({children}) =>  {
     return (
-
         <Grid id="App">
-	          {document.getElementById('Landing') !== null && <Row id="MenuBar"><MenuBar/></Row> }
+	          <Row id="MenuBar"><MenuBar/></Row>
 	          <Row>{children}</Row>
 	    </Grid>
-
     );
   }
 
