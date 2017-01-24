@@ -9,10 +9,10 @@ const Menubar = () => {
 
   return (
           <ButtonGroup id="menu" justified>
-            <Button className="menu-btn" href="/rainy-day-fund/#/what-is-a-rainy-day-fund">What's a Rainy Day Fund?</Button>
-            <Button className="menu-btn" href="/rainy-day-fund/#/assumptions">Assumptions</Button>
-            <Button className="menu-btn" href="/rainy-day-fund/#/expenses">Expenses</Button>
-            <Button className="menu-btn" href="#"><Link to="savings-plan">Savings Plan</Link></Button>
+            <Button className="menu-btn" href="/rainy-day-fund/#/what-is-a-rainy-day-fund"><Link className="link" to="what-is-a-rainy-day-fund">What is a Rainy Day Fund?</Link></Button>
+            <Button className="menu-btn" href="/rainy-day-fund/#/assumptions"><Link className="link" to="assumptions">Assumptions</Link></Button>
+            <Button className="menu-btn" href="/rainy-day-fund/#/expenses"><Link className="link" to="expenses">Expenses</Link></Button>
+            <Button className="menu-btn" href="#"><Link className="link" to="savings-plan">Savings Plan</Link></Button>
           </ButtonGroup>
   )
 }

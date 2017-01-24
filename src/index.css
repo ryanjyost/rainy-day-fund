@@ -145,6 +145,16 @@ Menu
 
 }
 
+.link{
+  width: 100%;
+  display: block;
+  color: #585858;
+}
+
+.link:hover{
+  text-decoration: none;
+}
+
 /*====================================
 WhatIsARainyDayFund
 ====================================*/

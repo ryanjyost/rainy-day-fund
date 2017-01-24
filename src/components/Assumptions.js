@@ -1,6 +1,7 @@
 //src/components/Assumptions.js
 
 import React from 'react';
+import {Link} from 'react-router'
 import { FormGroup, Row, ControlLabel, FormControl, Button, InputGroup } from 'react-bootstrap';
 
 import {formatDollarValues} from '../helpers'
@@ -77,8 +78,8 @@ const Assumptions = ({assumptions, handleUpdateIncomeSources, handleUpdateIncome
 			    </Row>
 			</FormGroup>
 
-			<Button className="nav-btn" href="/rainy-day-fund/#/expenses" block>
-				Next Step: Expenses
+			<Button className="nav-btn" block>
+				<Link className="link" to="expenses">Add Up Your Expenses</Link>
 			</Button>
 		</div>
 	)

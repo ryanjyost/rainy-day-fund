@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router'
 import { Button } from 'react-bootstrap';
 
 const WhatIsARainyDayFund = () =>  {
@@ -34,8 +35,8 @@ const WhatIsARainyDayFund = () =>  {
 				<br/><br/>
 		   </h3>
 
-	        <Button className="nav-btn" href="/rainy-day-fund/#/assumptions" block>
-	    		First Step: Assumptions
+	        <Button className="nav-btn" block>
+	    		<Link className="link" to="assumptions">Input Some Assumptions</Link>
 	    	</Button>
         </div>
     );

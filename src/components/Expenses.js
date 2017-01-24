@@ -1,6 +1,7 @@
 //src/components/Expenses.js
 
 import React, { Component } from 'react';
+import {Link} from 'react-router'
 import { Button } from 'react-bootstrap';
 
 import Expense from './Expense'
@@ -36,8 +37,8 @@ const Expenses = ({expenses, handleAddExpense, handleRemoveExpense, handleUpdate
 
                 <TotalExpenses expenses={expenses} /><br/>
 
-                <Button className="nav-btn" href="/rainy-day-fund/#/savings-plan" block>
-                	Next Step: Savings Plan
+                <Button className="nav-btn" block>
+                	<Link className="link" to="savings-plan">Go to Your Savings Plan</Link>
                 </Button>
             </div>
     );
