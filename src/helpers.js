@@ -1,6 +1,6 @@
 //src/helpers.js
 
-//take dollar value string, add commas, and change back to string
+//take raw dollar amount (string or number) and add commas using toLocaleString
 export const formatDollarValues = (numString) => {
 	if(numString == ""){
 		return '0';
