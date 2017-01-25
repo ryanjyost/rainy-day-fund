@@ -1,8 +1,8 @@
 {
   "name": "rainy-day-fund",
+  "homepage": "https://ryanjyost.github.io/rainy-day-fund",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ryanjyost.github.io/rainy-day-fund",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "react-scripts": "0.8.4",

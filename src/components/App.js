@@ -5,8 +5,6 @@ import { Grid, Row } from 'react-bootstrap';
 import MenuBar from './MenuBar';
 
 const App = ({children}) =>  {
-    console.log(children);
-
     return (
         <Grid id="App">
 	          <Row id="MenuBar"><MenuBar/></Row>

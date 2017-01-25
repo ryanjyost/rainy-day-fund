@@ -5,8 +5,6 @@ import {Link} from 'react-router'
 import { ButtonGroup, Button } from 'react-bootstrap';
 
 const Menubar = () => {
-
-
   return (
           <ButtonGroup id="menu" justified>
             <Button className="menu-btn" href="#">
