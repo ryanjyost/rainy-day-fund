@@ -1,9 +1,11 @@
 ## The Rainy Day Fund App
 This app is meant to help users understand the purpose of a rainy day fund and how to establish one. It's built with React and Redux.
 
-Explore the live app [here](https://ryanjyost.github.io/rainy-day-fund/)
+Explore the live app [here](https://ryanjyost.github.io/rainy-day-fund/).
 
-Check out the tutorial [here](https://medium.com/@ryanjyost/react-redux-react-router-and-rainy-day-fund-tutorial-e589f0803306#.e3zsdw3z9)
+Check out the tutorial [here](https://medium.com/@ryanjyost/react-redux-react-router-and-rainy-day-fund-tutorial-e589f0803306#.e3zsdw3z9).
+
+##
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
