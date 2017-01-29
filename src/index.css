@@ -22,7 +22,6 @@ h1{
   text-align:center;
 }
 
-
 h3{
   font-size: 2em;
   display: inline-block;
@@ -51,22 +50,14 @@ h6{
 	line-height:1.5em;
 }
 
-
 select{
   text-align-last:center !important;
 }
 
-  @media(max-width:700px){
-    select{
-      font-size: 1em !important;
-      height: 3em !important;
-    }
-  }
 
 ul {
   list-style-type: none !important;
 }
-
 
 
 .control-label{
@@ -113,6 +104,40 @@ ul {
   font-size: 2em;
   padding: 5px 15px 5px 15px;
 }
+
+
+/*==========General Responsive ====== */
+
+@media(max-width: 700px){
+    h1{
+      font-size: 2.5em;
+    }
+
+    h3{
+      font-size: 1.25em;
+    }
+
+    h6{
+      font-size: 1em;
+    }
+
+
+
+    select{
+      font-size: 1em !important;
+      height: 3em !important;
+    }
+
+    .nav-btn{
+      font-size: 1em;
+    }
+
+    .input-cont{
+      display: block !important;
+    }
+
+}
+
 
 /*====================================
 Landing
