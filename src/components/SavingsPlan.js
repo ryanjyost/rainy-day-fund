@@ -24,7 +24,7 @@ const SavingsPlan = ({assumptions, expenses, monthlySavings, handleUpdateMonthly
                     rawIncome = assumptions.income,
                     rawInitialSavings = assumptions.initialSavings,
                     rawMonthlyExpenses = calcTotalExpenses(expenses),
-                    incomeSources = Number(assumptions.incomeSources),
+                    incomeSources = Number(assumptions.incomeSources[1]),
 
 
                     //calculations, formatted data

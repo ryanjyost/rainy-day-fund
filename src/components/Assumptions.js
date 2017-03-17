@@ -20,11 +20,12 @@ const Assumptions = ({assumptions, handleUpdateIncomeSources, handleUpdateIncome
 						onChange={(e)=>{
 							handleUpdateIncomeSources(e.target.value);
 						}}
+						value={assumptions.incomeSources}
 					>
-			        	<option value="1" selected>Single, one source of income</option>
-			        	<option value="2">Single, two solid sources of income</option>
-			        	<option value="2">Married, we both have income</option>
-			        	<option value="1">Married, only one of us has income</option>
+			        	<option value="s1">Single, one source of income</option>
+			        	<option value="s2">Single, two solid sources of income</option>
+			        	<option value="m2">Married, we both have income</option>
+			        	<option value="m1">Married, only one of us has income</option>
 			        </FormControl>
 			    </Row>
 

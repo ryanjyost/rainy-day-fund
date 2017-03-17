@@ -7,7 +7,7 @@ import * as types from '../actions';
 //=================================
 
 const initialAssumptionsState = {
-	  incomeSources: 1,
+	  incomeSources: 's1',
 	  income: 0,
 	  initialSavings: 0
 };

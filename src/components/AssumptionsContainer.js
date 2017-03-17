@@ -14,7 +14,7 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 
 		handleUpdateIncomeSources: (sources) => {
-			dispatch(updateIncomeSources(Number(sources)))
+			dispatch(updateIncomeSources(sources))
 		},
 
 		handleUpdateIncome: (income) => {
